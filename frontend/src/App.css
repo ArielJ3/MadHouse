@@ -28,6 +28,12 @@
   color: #61dafb;
 }
 
+.rectangle-1 {
+  height: 380px;
+  width: 736px;
+  background-color: #d9d9d9;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

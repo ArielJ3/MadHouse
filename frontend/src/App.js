@@ -1,5 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import React from "react";
+
+const  Rectangle1: React.VFC = () => {
+  return (
+    <div className="rectangle-1" />
+  )
+ }
 
 function App() {
   return (
@@ -17,6 +24,7 @@ function App() {
         >
           Learn React
         </a>
+        <Rectangle1 />
       </header>
     </div>
   );
