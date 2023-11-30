@@ -14,7 +14,7 @@ services:
   backend:
     build: ./backend
     ports:
-      - "5001:5000"
+      - "4200:4200"
     volumes:
       - ./backend:/app
     environment:
@@ -24,4 +24,4 @@ services:
     image: elevate/postgres-madlib-postgis:10.6-1.15-2.5.2
     volumes:
       - ./database/psqldata:/var/lib/postgresql/data
-      - ./database/import:/var/lib/postgresql/import
+      - ./database/import:/import
