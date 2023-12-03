@@ -34,3 +34,53 @@
   height: 16px;
   width: 16px;
 }
+/* Show the dropdown content when 'show' class is added */
+.dropdown-content.show {
+  display: block;
+}
+
+/* dropdown.css */
+
+/* Container for the dropdown */
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  left: 20px;
+}
+
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none; /* Initially hidden */
+  position: relative;
+  top: 100%; /* Positions the dropdown content right below the button */
+  background-color: #f9f9f9;
+  min-width: 160px; /* You might want to match this width to the button's width */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border: 1px solid #ddd; /* Optional: adds a border to the dropdown */
+}
+
+/* Dropdown Item */
+.dropdown-item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #ddd; /* Optional: adds a separator between items */
+}
+
+/* Last Dropdown Item - remove the border */
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown content when 'show' class is added in your React component */
+.dropdown-content.show {
+  display: block;
+}
