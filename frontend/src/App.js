@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+import './dropdown.css';
+import Dashboard from './dashboard.js';
 import './App.css';
 
 function App() {
@@ -15,9 +17,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          DASHBOARD TEST
         </a>
       </header>
+      <Dashboard />
     </div>
   );
 }
