@@ -1,0 +1,46 @@
+.key-metrics {
+  display: flex;
+  flex-direction: row; /* Aligns items in a row */
+  justify-content: space-around; /* Even spacing around each item */
+  flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+  height: 112px;
+  width: 90%;
+}
+.metrics-card {
+  flex: 1 1 14%; /* Makes the card less wide */
+  margin: 20px; /* Adjust margin for spacing */
+  border-radius: 16px;
+  padding: 24px;
+  gap: 8px;
+  height: 50px;
+  background-color: #e3f5ff;
+}
+.metrics-content {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.metrics-title {
+  text-align: left;
+  vertical-align: top;
+  font-size: 14px;
+  margin-top:5px;
+  margin-bottom:5px;
+  font-family: Inter;
+  line-height: 20%;
+  color: #1c1c1c;
+}
+
+.metrics-number {
+  text-align: left;
+  vertical-align: top;
+  font-size: 24px;
+  font-family: Inter;
+  line-height: 36%;
+  color: #1c1c1c;
+}
+

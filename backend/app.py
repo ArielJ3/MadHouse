@@ -88,6 +88,10 @@ def population_dwellings():
 def structural_dwellings():
     data = query_db("SELECT * FROM structural_dwellings_household_size;")
     return jsonify(data)
+@app.route('/api/regions', methods=['GET'])
+def regions():
+    data = query_db("SELECT DISTINCT geo FROM population_by_region WHERE vector != 'v5';")
+    return jsonify(data)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=4200, debug=True)
