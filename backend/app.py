@@ -93,5 +93,10 @@ def regions():
     data = query_db("SELECT DISTINCT geo FROM population_by_region WHERE vector != 'v5';")
     return jsonify(data)
 
+@app.route('/api/population', methods=['GET'])
+def population():
+    data = query_db("SELECT geo, MAX(population_estimate) FROM population_by_region WHERE ref_date = '2022-01-01' GROUP BY geo;")
+    return jsonify(data)
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=4200, debug=True)
